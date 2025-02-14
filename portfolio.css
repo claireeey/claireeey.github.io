@@ -1,0 +1,142 @@
+/**** GENERAL STYLING ****/
+/* Heading 1 elements */
+h1 {
+    text-transform: uppercase; /* Capitalizing all h1 headings */
+    font-family: "Copperplate", fantasy;/* Sets the font family of all h1 headings */
+    text-align: center; /* Centering all h1 elements */
+    margin-top: 3%; /* Adds a small margin above h1 elements */
+    color: #1c17a0; 
+}
+
+/* Paragraph elements */
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: center; /* Justify text within paragraph elements */
+    letter-spacing: 1px; /* This expands the text slightly */
+    font-size: 20px;
+    padding-left: 20px; /* Adds padding to the left of the paragraph element */
+    padding-right: 20px; /* Adds padding to the right of the paragraph element */
+}
+
+
+/**** NAVBAR STYLING ****/
+/* Add a black background color to the top navigation */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    position: fixed; /* Fix the navbar at the top of the page */
+    top: 0; /* Align it to the top of the page */
+    left: 8px; /* Start from the left edge */
+    right: 8px; /* End at the right edge */
+    justify-content: center; /* Center the navbar links horizontally */
+    align-items: center; /* Vertically center items in the navbar */
+    background-color: #333; /* Navbar background color */
+    overflow: hidden; /* Hide overflowing content */
+    z-index: 1000; /* Ensure the navbar is above other elements */
+}
+  
+/* Style the links inside the navigation bar */
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #b3a763;
+    color: black;
+  }
+  
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #eade99;
+    color: white;
+  }
+
+
+/**** VIDEO STYLING ****/
+/* Formatting for background video */
+#Coding_Video {
+    position: fixed; /* Fix the video to the page */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100vw; /* Set the width to the full viewport width */
+    height: 100vh; /* Set the height to the full viewport height */
+    object-fit: cover; /* Scale the video proportionally to fill the screen */
+    z-index: -1; /* Place it behind all other elements */
+    overflow: hidden; /* Prevent any overflow issues */
+    pointer-events: none; /* Prevent interaction with the video */
+}
+
+/* Texts over the video */
+/* Styling for portfolio title text */
+.brown-text {
+    color: #c18a3e; /* This is used to change the color of the portfolio title text */
+    text-align: center;
+    display: flex; /* Use flexbox for layout */
+}
+
+.Video_Text {
+    color: white; /* Makes the font color white */
+    padding: 20px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the navbar links horizontally */
+    align-items: center; /* Vertically center items in the navbar */
+  }
+
+  /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
+* { /* The asterisk is a universal selector that applies this effect to all elements on the page */
+    box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+.Column_2 {
+    float: left;
+    width: 50%; /* This ensures the column takes up half of the page width */
+    padding: 10px;
+    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+}
+
+/***** THE END OF TABLE STYLING *****/
+
+
+.Contact_form {
+display: flex; /* Use flexbox for layout */
+justify-content: center; /* Center the navbar links horizontally */
+align-items: center; 
+letter-spacing: 1px; 
+}
+
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack form fields vertically */
+    gap: 1px; /* Add space between inputs */
+}
+
+.footer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    background-color: #333; /* Background color */
+    color: rgb(186, 236, 235); /* Text color */
+    padding: 20px; /* Padding inside the footer */
+    position: relative; /* Fix it to the viewport */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Start from the left edge */
+    right: 0; /* End at the right edge */
+    width: 100%; /* Ensure the footer stretches full width */
+    z-index: 1000; /* Keep it above other elements */
+    height: 48px; /* Set a fixed height for the footer */
+    overflow: hidden; /* Hide overflowing content */
+}
